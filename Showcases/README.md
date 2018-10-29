@@ -1,17 +1,10 @@
-> ## Showcases in this directory are not updated and maintained anymore. The source code is kept here for reference only. For latest updates, checkout our [new and feature-rich sample applications](https://github.com/groupdocs-annotation).
-
 # Showcases
 
-In GroupDocs.Annotation 3.x the Front-End has been disintegrated from the API and it has become a UI-Less back end API. Therefore, the front-end has been published as open sourced sample project. The users can seek the knwoledge about implementation of the project and make the changes according to their needs/requirements.
-
-
-The list of the published front-ends has been written below: 
-
-
+The showcases provided in this section are open-source. You can explore them in order to learn how can GroupDocs.Annotation for .NET can be utilized for the front-end projects developmemnt. These projects are easy to manage and can be enhanced as per your requriements.
 
 Directory | Description
 --------- | -----------
 
-[ASP.NET MVC Front-End](GroupDocs-Annotation-Front-End)  | It is an ASP.NET MVC application which demonstrate that how GroupDocs.Annotation 3.x is being used to create Annotations in your documents.
+[GroupDocs.Annotation-for-.NET-MVC](GroupDocs.Annotation-for-.NET-MVC)  | Our new and improved GroupDocs.Annotation for .NET MVC UI Example - native, simple, fully configurable and optimized .NET document annotation application.
 
-[ASP.NET WebForms Front-End](GroupDocs-Annotation-Webforms-Front-End)  | It is an ASP.NET WebForms application which demonstrate that how GroupDocs.Annotation 3.x is being used to create Annotations in your documents.
+[GroupDocs-Annotation-Webforms](GroupDocs-Annotation-Webforms)  | Our new and improved GroupDocs.Annotation for .NET WebForms UI Example - native, simple, fully configurable and optimized .NET document annotation application.
