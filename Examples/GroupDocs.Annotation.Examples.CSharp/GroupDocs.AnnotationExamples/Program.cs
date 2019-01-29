@@ -68,6 +68,9 @@ namespace GroupDocs.Annotation.CSharp
             //////Remove all annotations
             //PDFAnnotation.RemoveAllAnnotationsFromDocument();
 
+            //////Get Image Representation of Pages for PDF 
+            //PDFAnnotation.GetImageRepresentationOfPagesForPDF();
+
             #endregion
 
             #region Annotation Functions for Words Document format

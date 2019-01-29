@@ -1,5 +1,6 @@
 ﻿using GroupDocs.Annotation.Config;
 using GroupDocs.Annotation.Domain;
+using GroupDocs.Annotation.Domain.Image;
 using GroupDocs.Annotation.Handler;
 using System;
 using System.Collections.Generic;
@@ -7,6 +8,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GroupDocs.Annotation.Domain.Options;
 
 namespace GroupDocs.Annotation.CSharp
 {
@@ -565,5 +567,46 @@ namespace GroupDocs.Annotation.CSharp
             }
         }
 
+
+        /// <summary>
+        /// Get Image Representation of Pages for PDF 
+        /// </summary>
+        public static void GetImageRepresentationOfPagesForPDF()
+        {
+
+            try
+            {
+                //ExStart:GetImageRepresentationOfPagesForPDF
+                // Create instance of annotator. 
+                AnnotationConfig cfg = CommonUtilities.GetConfiguration();
+
+                AnnotationImageHandler annotator = new AnnotationImageHandler(cfg);
+
+                // Get input file stream
+                Stream inputFile = new FileStream(CommonUtilities.MapSourceFilePath(CommonUtilities.filePath), FileMode.Open, FileAccess.ReadWrite);
+
+                List<PageImage> images = annotator.GetPages(inputFile, new ImageOptions{ WithoutAnnotations = true});
+
+                // Save result stream to file.
+                using (FileStream fileStream = new FileStream(CommonUtilities.MapDestinationFilePath("Annotated.png"), FileMode.Create))
+                {
+                    byte[] buffer = new byte[images[0].Stream.Length];
+                    images[0].Stream.Seek(0, SeekOrigin.Begin);
+                    images[0].Stream.Read(buffer, 0, buffer.Length);
+                    fileStream.Write(buffer, 0, buffer.Length);
+                    fileStream.Close();
+                }
+                //ExEnd:GetImageRepresentationOfPagesForPDF
+            }
+            catch (System.Exception exp)
+            {
+                Console.WriteLine(exp.Message);
+            }
+        }
+
+        private static ImageOptions ImageOptions()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
