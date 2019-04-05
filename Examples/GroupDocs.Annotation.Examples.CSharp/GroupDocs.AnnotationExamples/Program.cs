@@ -71,6 +71,15 @@ namespace GroupDocs.Annotation.CSharp
             //////Get Image Representation of Pages for PDF 
             //PDFAnnotation.GetImageRepresentationOfPagesForPDF();
 
+            //////Add Ellipse Annotation 
+            //PDFAnnotation.AddEllipseAnnotation();
+
+            //////Get Thumnails of Pages for PDF 
+            //PDFAnnotation.GetThumnailsOfPagesForPDF();
+
+            //////Set Watermark angle for PDF 
+            //PDFAnnotation.SetWatermarkAngleForPDF();
+
             #endregion
 
             #region Annotation Functions for Words Document format

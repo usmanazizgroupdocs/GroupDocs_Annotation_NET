@@ -604,9 +604,112 @@ namespace GroupDocs.Annotation.CSharp
             }
         }
 
-        private static ImageOptions ImageOptions()
+        /// <summary>
+        /// Shows how to add Ellipse Annotation in PDF 
+        /// </summary>
+        public static void AddEllipseAnnotation()
         {
-            throw new NotImplementedException();
+            try
+            {
+                //ExStart:AddEllipseAnnotation
+                // Get input file stream
+                Stream inputFile = new FileStream(CommonUtilities.MapSourceFilePath(CommonUtilities.filePath), FileMode.Open, FileAccess.ReadWrite);
+
+                // Initialize list of AnnotationInfo
+                List<AnnotationInfo> annotations = new List<AnnotationInfo>();
+
+                // Initialize ellipse annotation.
+                AnnotationInfo ellipse = new AnnotationInfo
+                {
+                    Box = new Rectangle(100, 100, 50, 50),
+                    //Type = AnnotationType.Ellipse;
+                };
+
+                // Add annotation to list
+                annotations.Add(ellipse);
+
+                // Export annotation and save output file
+                CommonUtilities.SaveOutputDocument(inputFile, annotations, DocumentType.Pdf);
+                //ExEnd:AddEllipseAnnotation
+            }
+            catch (System.Exception exp)
+            {
+                Console.WriteLine(exp.Message);
+            }
+        }
+
+        /// <summary>
+        /// Shows how to get thumbnails of pages for PDF
+        /// </summary>
+        public static void GetThumbnailsOfPagesForPDF()
+        {
+
+            try
+            {
+                //ExStart:GetThumnailsOfPagesForPDF
+                // Create instance of annotator. 
+                AnnotationConfig cfg = CommonUtilities.GetConfiguration();
+
+                AnnotationImageHandler annotator = new AnnotationImageHandler(cfg);
+
+                // Get input file stream
+                Stream inputFile = new FileStream(CommonUtilities.MapSourceFilePath(CommonUtilities.filePath), FileMode.Open, FileAccess.ReadWrite);
+
+                List<PageImage> images = annotator.GetPages(inputFile, new ImageOptions { WithoutAnnotations = true });
+                
+                //Then if we want get thumbnail we call GetThumbnail() method of PageImage item:
+                foreach (PageImage pageImage in images)
+                {
+                    //Stream stream = pageImage.GetThumbnail(); // do something with stream 
+                }
+
+                // Default image size was 300x180. If need specified image size, you can pass method parameters:
+                // image thumbnails 100x100
+                foreach (PageImage pageImage in images)
+                {
+                    //Stream stream = pageImage.GetThumbnail(100, 100);
+                    // do something with stream 
+                }
+                //ExEnd:GetThumnailsOfPagesForPDF
+            }
+            catch (System.Exception exp)
+            {
+                Console.WriteLine(exp.Message);
+            }
+        }
+
+        /// <summary>
+        /// Shows how to set Watermark angle for PDF
+        /// </summary>
+        public static void SetWatermarkAngleForPDF()
+        {
+
+            try
+            {
+                //ExStart:SetWatermarkAngleForPDF
+                // Get input file stream
+                Stream inputFile = new FileStream(CommonUtilities.MapSourceFilePath(CommonUtilities.filePath), FileMode.Open, FileAccess.ReadWrite);
+
+                // Initialize list of AnnotationInfo
+                List<AnnotationInfo> annotations = new List<AnnotationInfo>();
+
+                AnnotationInfo annotation = new AnnotationInfo
+                {
+                    Type = AnnotationType.Watermark,
+                    //Angle = 45,
+                    
+                };               
+                // Add annotation to list
+                annotations.Add(annotation);
+
+                // Export annotation and save output file
+                CommonUtilities.SaveOutputDocument(inputFile, annotations, DocumentType.Pdf);
+                //ExEnd:SetWatermarkAngleForPDF
+            }
+            catch (System.Exception exp)
+            {
+                Console.WriteLine(exp.Message);
+            }
         }
     }
 }
