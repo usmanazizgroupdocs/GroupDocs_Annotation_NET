@@ -622,7 +622,7 @@ namespace GroupDocs.Annotation.CSharp
                 AnnotationInfo ellipse = new AnnotationInfo
                 {
                     Box = new Rectangle(100, 100, 50, 50),
-                    //Type = AnnotationType.Ellipse;
+                    Type = AnnotationType.Ellipse
                 };
 
                 // Add annotation to list
@@ -660,14 +660,14 @@ namespace GroupDocs.Annotation.CSharp
                 //Then if we want get thumbnail we call GetThumbnail() method of PageImage item:
                 foreach (PageImage pageImage in images)
                 {
-                    //Stream stream = pageImage.GetThumbnail(); // do something with stream 
+                    Stream stream = pageImage.GetThumbnail(); // do something with stream 
                 }
 
                 // Default image size was 300x180. If need specified image size, you can pass method parameters:
                 // image thumbnails 100x100
                 foreach (PageImage pageImage in images)
                 {
-                    //Stream stream = pageImage.GetThumbnail(100, 100);
+                    Stream stream = pageImage.GetThumbnail(100, 100);
                     // do something with stream 
                 }
                 //ExEnd:GetThumnailsOfPagesForPDF
@@ -696,7 +696,7 @@ namespace GroupDocs.Annotation.CSharp
                 AnnotationInfo annotation = new AnnotationInfo
                 {
                     Type = AnnotationType.Watermark,
-                    //Angle = 45,
+                    Angle = 45,
                     
                 };               
                 // Add annotation to list
