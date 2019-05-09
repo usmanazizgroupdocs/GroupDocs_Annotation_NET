@@ -24,7 +24,7 @@ namespace GroupDocs.Annotation.CSharp
 
             #region Annotation Functions for PDF
 
-            //CommonUtilities.filePath = "sample.pptx";
+            //CommonUtilities.filePath = "sample.pdf";
 
             //////Add text annotation in pdf
             //PDFAnnotation.AddTextAnnotation(); 
@@ -132,7 +132,7 @@ namespace GroupDocs.Annotation.CSharp
             //WordAnnotation.AddPolylineAnnotationforWords();
 
             //////Add link annotation in Words
-            WordAnnotation.AddLinkAnnotationInWords();
+            //WordAnnotation.AddLinkAnnotationInWords();
 
             #endregion
 
