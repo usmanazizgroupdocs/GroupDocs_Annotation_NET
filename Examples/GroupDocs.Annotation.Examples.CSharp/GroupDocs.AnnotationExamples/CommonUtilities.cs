@@ -1,6 +1,7 @@
 ﻿using GroupDocs.Annotation.Common.License;
 using GroupDocs.Annotation.Config;
 using GroupDocs.Annotation.Domain;
+using GroupDocs.Annotation.Domain.Containers;
 using GroupDocs.Annotation.Domain.Image;
 using GroupDocs.Annotation.Domain.Options;
 using GroupDocs.Annotation.Handler;
@@ -258,9 +259,25 @@ namespace GroupDocs.Annotation.CSharp
             {
                 Console.WriteLine(exp.Message);
             }
-
+            //ExEnd:GetTextCoordinatesInImage
         }
-        //ExEnd:GetTextCoordinatesInImage
+
+
+        /// <summary>
+        /// Get Password Protected Documents
+        /// </summary>
+        public static FileContainer GetPasswordProtectedDocuments(Stream protectedDocument,String password)
+        {            
+            //ExStart:GetPasswordProtectedDocuments
+            AnnotationConfig cfg = CommonUtilities.GetConfiguration();
+            AnnotationImageHandler annotator = new AnnotationImageHandler(cfg);
+
+            FileContainer convertedDocument = annotator.GetPdfFile(protectedDocument, password);
+            
+            return convertedDocument;
+
+            //ExEnd:GetPasswordProtectedDocuments
+        }
     }
     //ExEnd:CommonUtilities
 }
