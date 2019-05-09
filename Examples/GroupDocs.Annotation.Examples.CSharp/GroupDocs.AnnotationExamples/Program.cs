@@ -80,6 +80,9 @@ namespace GroupDocs.Annotation.CSharp
             //////Set Watermark angle for PDF 
             //PDFAnnotation.SetWatermarkAngleForPDF();
 
+            //////Add link annotation
+            //PDFAnnotation.AddLinkAnnotation();
+
             #endregion
 
             #region Annotation Functions for Words Document format
