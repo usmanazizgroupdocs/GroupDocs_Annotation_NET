@@ -547,6 +547,43 @@ namespace GroupDocs.Annotation.CSharp
                 Console.WriteLine(exp.Message);
             }
         }
+        /// <summary>
+        /// Add link annotation in Slides
+        /// </summary>
+        public static void AddLinkAnnotationInSlides()
+        {
+            try
+            {
+                //ExStart:AddLinkAnnotationInSlides
+                // Get input file stream
+                Stream inputFile = new FileStream(CommonUtilities.MapSourceFilePath(CommonUtilities.filePath), FileMode.Open, FileAccess.ReadWrite);
+
+                // Initialize list of AnnotationInfo
+                List<AnnotationInfo> annotations = new List<AnnotationInfo>();
+
+                // Polyline annotation
+                AnnotationInfo link = new AnnotationInfo
+                {
+                    Box = new Rectangle(173.2986f, 154.3131f, 142.5f, 9),
+                    //URL
+                    FieldText = "https://www.google.com",
+                    SvgPath = "[{\"x\":265.44,\"y\":388.83},{\"x\":472.19,\"y\":388.83},{\"x\": 265.44,\"y\":349.14},{\"x\":472.19,\"y\":349.14}]",
+                    Type = AnnotationType.Link,
+                    CreatorName = "Anonym A."
+                };
+                // Add annotation to list
+                annotations.Add(link);
+
+                // Export annotation and save output file
+                CommonUtilities.SaveOutputDocument(inputFile, annotations, DocumentType.Slides);
+                //ExEnd:AddLinkAnnotationInSlides
+            }
+            catch (System.Exception exp)
+            {
+                Console.WriteLine(exp.Message);
+            }
+        }
+
 
     }
 }
