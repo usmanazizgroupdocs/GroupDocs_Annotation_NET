@@ -563,5 +563,38 @@ namespace GroupDocs.Annotation.CSharp
             }
         }
 
+        /// <summary>
+        /// Shows how to add Ellipse Annotation in Images 
+        /// </summary>
+        public static void AddEllipseAnnotationInImages()
+        {
+            try
+            {
+                //ExStart:AddEllipseAnnotationInImages
+                // Get input file stream
+                Stream inputFile = new FileStream(CommonUtilities.MapSourceFilePath(CommonUtilities.filePath), FileMode.Open, FileAccess.ReadWrite);
+
+                // Initialize list of AnnotationInfo
+                List<AnnotationInfo> annotations = new List<AnnotationInfo>();
+
+                // Initialize ellipse annotation.
+                AnnotationInfo ellipse = new AnnotationInfo
+                {
+                    Box = new Rectangle(100, 100, 50, 50),
+                    Type = AnnotationType.Ellipse
+                };
+
+                // Add annotation to list
+                annotations.Add(ellipse);
+
+                // Export annotation and save output file
+                CommonUtilities.SaveOutputDocument(inputFile, annotations, DocumentType.Images);
+                //ExEnd:AddEllipseAnnotationInImages
+            }
+            catch (System.Exception exp)
+            {
+                Console.WriteLine(exp.Message);
+            }
+        }
     }
 }

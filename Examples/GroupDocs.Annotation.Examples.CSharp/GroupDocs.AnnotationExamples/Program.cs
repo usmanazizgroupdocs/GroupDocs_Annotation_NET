@@ -131,6 +131,9 @@ namespace GroupDocs.Annotation.CSharp
             ////Add polyline annotation for Words Document format
             //WordAnnotation.AddPolylineAnnotationforWords();
 
+            //////Add Ellipse Annotation in Words
+            //WordAnnotation.AddEllipseAnnotationInWords();
+
             //////Add link annotation in Words
             //WordAnnotation.AddLinkAnnotationInWords();
 
@@ -185,8 +188,13 @@ namespace GroupDocs.Annotation.CSharp
             ////Remove all annotations
             //SlidesAnnotation.RemoveAllAnnotationsFromDocument();
 
+            //////Add Ellipse Annotation in Slides
+            //SlidesAnnotation.AddEllipseAnnotationInSlides();
+
             //////Add link annotation in Slides
             //SlidesAnnotation.AddLinkAnnotationInSlides();
+
+
 
             #endregion
 
@@ -194,6 +202,9 @@ namespace GroupDocs.Annotation.CSharp
             //CommonUtilities.filePath = "excel.xlsx";
             ////Add text annotation in Cells
             //CellsAnnotation.AddTextAnnotationInCells(); 
+
+            //////Add Ellipse Annotation in Cells
+            //CellsAnnotation.AddEllipseAnnotationInCells();
             #endregion
 
             #region Annotation Functions for Image
@@ -241,6 +252,9 @@ namespace GroupDocs.Annotation.CSharp
 
             //////Remove all annotations
             //ImagesAnnotation.RemoveAllAnnotationsFromDocument();
+
+            //////Add Ellipse Annotation in Images
+            //ImagesAnnotation.AddEllipseAnnotationInImages();
 
             #endregion
 

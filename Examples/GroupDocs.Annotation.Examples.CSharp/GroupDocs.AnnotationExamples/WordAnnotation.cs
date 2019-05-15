@@ -589,6 +589,40 @@ namespace GroupDocs.Annotation.CSharp
                 Console.WriteLine(exp.Message);
             }
         }
+
+        /// <summary>
+        /// Shows how to add Ellipse Annotation in Words Document 
+        /// </summary>
+        public static void AddEllipseAnnotationInWords()
+        {
+            try
+            {
+                //ExStart:AddEllipseAnnotationInWords
+                // Get input file stream
+                Stream inputFile = new FileStream(CommonUtilities.MapSourceFilePath(CommonUtilities.filePath), FileMode.Open, FileAccess.ReadWrite);
+
+                // Initialize list of AnnotationInfo
+                List<AnnotationInfo> annotations = new List<AnnotationInfo>();
+
+                // Initialize ellipse annotation.
+                AnnotationInfo ellipse = new AnnotationInfo
+                {
+                    Box = new Rectangle(100, 100, 50, 50),
+                    Type = AnnotationType.Ellipse
+                };
+
+                // Add annotation to list
+                annotations.Add(ellipse);
+
+                // Export annotation and save output file
+                CommonUtilities.SaveOutputDocument(inputFile, annotations, DocumentType.Words);
+                //ExEnd:AddEllipseAnnotationInWords
+            }
+            catch (System.Exception exp)
+            {
+                Console.WriteLine(exp.Message);
+            }
+        }
     }
 
 }
