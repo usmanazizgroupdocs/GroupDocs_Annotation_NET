@@ -127,6 +127,7 @@ namespace GroupDocs.Annotation.CSharp
         }
         //ExEnd:ApplyLicense
 
+        //ExStart:SetMeteredLicense
         /// <summary>
         /// Set Metered License
         /// </summary>
@@ -138,6 +139,17 @@ namespace GroupDocs.Annotation.CSharp
             metered.SetMeteredKey(PublicKey, PrivateKey);
         }
         //ExEnd:SetMeteredLicense
+
+        //ExStart:GetAlreadyUsedCredit
+        /// <summary>
+        /// Number of already used credits
+        /// </summary>
+        public static decimal GetAlreadyUsedCredit()
+        {
+            //Retrieves amount of already used credits
+            return Metered.GetConsumptionCredit();
+        }
+        //ExEnd:GetAlreadyUsedCredit
 
         //ExStart:GetConfiguration
         /// <summary>
