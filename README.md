@@ -20,12 +20,11 @@ Directory | Description
 ## How to Run the Examples
 
 + You can either clone the repository using your favorite GitHub client or download the ZIP file from the above button.
-+ Extract the contents of the ZIP file to any folder on your computer. All the examples are located in the Examples folder.
-+ In the extracted files and folders, you can see solution file for C# Project..
++ Extract the contents of the ZIP file to any folder on your computer.
++ In the extracted files and folders, you can see solution file for C# Project.
 + The project is created in Visual Studio 2012.
 + Open the solution file in Visual Studio and build the project.
 + On the first run, the dependencies will automatically be downloaded via NuGet.
-+ Data folder at the root folder of Examples contains some sample input templates used in code examples. It is mandatory that you download the Data folder along with the examples project.
 + Open Program.cs file, all the examples are called from here.
 + Uncomment the examples you want to run from within the project.
 
