@@ -1,4 +1,4 @@
-# GroupDocs.Annotation for .NET
+## GroupDocs.Annotation for .NET
 
 This package contains [Examples](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET/tree/master/Examples) and  [Showcases](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET/tree/master/Showcases) for [GroupDocs.Annotation for .NET](https://products.groupdocs.com/annotation/net) that will help you in understanding the API's working and writing your own applications.
 
@@ -17,7 +17,20 @@ Directory | Description
 [Showcases](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET/tree/master/Showcases)  | The *Legacy Front End* is the open source web based projects. This project is based on Front Controller Design pattern and demonstrate the salient features of GroupDocs.Annotation API. 
 [Plugins](https://github.com/groupdocs-Annotation/GroupDocs.Annotation-for-.NET/tree/master/Plugins/GroupDocs_Annotation_VSPlugin)  | Contains the plugins related to GroupDocs.Annotation 3.x for Visual Studio.
 
-# Resources
+## How to Run the Examples
+
++ You can either clone the repository using your favorite GitHub client or download the ZIP file from the above button.
++ Extract the contents of the ZIP file to any folder on your computer.
++ In the extracted files and folders, you can see solution file for C# Project.
++ The project is created in Visual Studio 2012.
++ Open the solution file in Visual Studio and build the project.
++ On the first run, the dependencies will automatically be downloaded via NuGet.
++ Open Program.cs file, all the examples are called from here.
++ Uncomment the examples you want to run from within the project.
+
+Please find more details for how to run the examples [here](https://docs.groupdocs.com/display/annotationnet/How+to+Run+Examples).
+
+## Resources
 
 + **Website:** [www.groupdocs.com](https://www.groupdocs.com/)
 + **Product Home:** [GroupDocs.Annotation for .NET](https://products.groupdocs.com/annotation)
