@@ -8,22 +8,14 @@ This package contains C# Example Projects for [GroupDocs.Annotation for .NET](ht
   </a>
 </p>
 
-# Prerequisite
-
-+ Visual Studio 2012 or later.
-
-+ GroupDocs.Annotation 17.8.0 or later
-
-
 # How to Run the Examples?
 
-The package contains project for C# examples. Follow the given steps to proceed with project build:
+Follow the given steps to proceed with project build:
 
 * Extract the downloaded project and open the solution file in Visual Studio
 * Right click on solution and press "Enable NuGet package Restore"
-* Build the project.
+* Build the project
 
 In other case, it is possible that Visual Studio is unable to automatically add APIs references due to Visual Studio version differences. In this case, please add references of missing APIs manually.
-
 
 For more details, visit  [How to Run Examples](https://docs.groupdocs.com/display/annotationnet/How+to+Run+Examples).
