@@ -1,4 +1,5 @@
-﻿using Amazon.S3;
+﻿#if !NETCOREAPP
+using Amazon.S3;
 using Amazon.S3.Model;
 using GroupDocs.Annotation.Models;
 using GroupDocs.Annotation.Models.AnnotationModels;
@@ -49,3 +50,4 @@ namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage.Loading
         }
     }
 }
+#endif

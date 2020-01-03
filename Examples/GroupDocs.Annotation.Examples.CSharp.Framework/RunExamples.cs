@@ -22,23 +22,23 @@ namespace GroupDocs.Annotation.Examples.CSharp
             #endregion
 
             #region Get supported file formats
-            //GetSupportedFileFormats.Run();
+            GetSupportedFileFormats.Run();
             #endregion
 
             #region Get file info
-            //GetFileInfo.Run();
+            GetFileInfo.Run();
             #endregion
 
             #region Load document from local disk
-            //LoadDocumentFromLocalDisk.Run();
+            LoadDocumentFromLocalDisk.Run();
             #endregion
 
             #region Load document from stream
-            //LoadDocumentFromStream.Run();
+            LoadDocumentFromStream.Run();
             #endregion
 
             #region Load password-protected documents
-            //LoadPasswordProtectedDocuments.Run();
+            LoadPasswordProtectedDocuments.Run();
             #endregion
 
             #region Load document from url
@@ -58,27 +58,28 @@ namespace GroupDocs.Annotation.Examples.CSharp
             #endregion
 
             #region Extract annotations from document
-            //ExtractAnnotationsFromDocument.Run();
+            ExtractAnnotationsFromDocument.Run();
             #endregion
 
             #region Remove annotation from document
-            //RemoveAnnotationFromDocument.Run();
+            RemoveAnnotationFromDocument.Run();
             #endregion
 
             #region Generate document pages preview
-            //GenerateDocumentPagesPreview.Run();
+            GenerateDocumentPagesPreview.Run();
             #endregion
 
             #region Saving specific page range
-            //SavingSpecificPageRange.Run();
+            SavingSpecificPageRange.Run();
             #endregion
 
             #region Saving only pages with annotations
-            //SavingOnlyPagesWithAnnotations.Run();
+            SavingOnlyPagesWithAnnotations.Run();
             #endregion
 
             #region Filtering annotation types
-            //FilteringAnnotationTypes.Run();
+            /// TODO: Raised an exception with 19.11
+            // FilteringAnnotationTypes.Run();
             #endregion
 
             #region Add area annotation
@@ -86,79 +87,79 @@ namespace GroupDocs.Annotation.Examples.CSharp
             #endregion
 
             #region Add arrow annotation
-            //AddArrowAnnotation.Run();
+            AddArrowAnnotation.Run();
             #endregion
 
             #region Add distance annotation
-            //AddDistanceAnnotation.Run();
+            AddDistanceAnnotation.Run();
             #endregion
 
             #region Add ellipse annotation
-            //AddEllipseAnnotation.Run();
+            AddEllipseAnnotation.Run();
             #endregion
 
             #region Add link annotation
-            //AddLinkAnnotation.Run();
+            AddLinkAnnotation.Run();
             #endregion
 
             #region Add point annotation
-            //AddPointAnnotation.Run();
+            AddPointAnnotation.Run();
             #endregion
 
             #region Add resources redaction annotation
-            //AddResourcesRedactionAnnotation.Run();
+            AddResourcesRedactionAnnotation.Run();
             #endregion
 
             #region Add text highlight annotation
-            //AddTextHighlightAnnotation.Run();
+            AddTextHighlightAnnotation.Run();
             #endregion
 
             #region Add text field annotation
-            //AddTextFieldAnnotation.Run();
+            AddTextFieldAnnotation.Run();
             #endregion
 
             #region Add text redaction annotation
-            //AddTextRedactionAnnotation.Run();
+            AddTextRedactionAnnotation.Run();
             #endregion
 
             #region Add text replacement annotation
-            //AddTextReplacementAnnotation.Run();
+            AddTextReplacementAnnotation.Run();
             #endregion
 
             #region Add text strikeout annotation
-            //AddTextStrikeoutAnnotation.Run();
+            AddTextStrikeoutAnnotation.Run();
             #endregion
 
             #region Add polyline annotation
-            //AddPolylineAnnotation.Run();
+            AddPolylineAnnotation.Run();
             #endregion
 
             #region Add underline annotation
-            //AddTextUnderlineAnnotation.Run();
+            AddTextUnderlineAnnotation.Run();
             #endregion
 
             #region Add watermark annotation
-            //AddWatermarkAnnotation.Run();
+            AddWatermarkAnnotation.Run();
             #endregion
 
             #region Add replies annotation
-            //AddReplies.Run();
+            AddReplies.Run();
             #endregion
 
             #region Remove replies
-            //RemoveReplies.Run();
+            RemoveReplies.Run();
             #endregion
 
             #region Remove replies by Id
-            //RemoveRepliesById.Run();
+            RemoveRepliesById.Run();
             #endregion
 
             #region Remove replies by user name
-            //RemoveRepliesByUserName.Run();
+            RemoveRepliesByUserName.Run();
             #endregion
 
             #region Update annotation
-            //UpdateAnnotation.Run();
+            UpdateAnnotation.Run();
             #endregion
 
             Console.WriteLine();
