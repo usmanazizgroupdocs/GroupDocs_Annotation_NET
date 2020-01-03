@@ -1,4 +1,5 @@
-﻿using GroupDocs.Annotation.Models;
+﻿#if !NETCOREAPP
+using GroupDocs.Annotation.Models;
 using GroupDocs.Annotation.Models.AnnotationModels;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Auth;
@@ -57,3 +58,4 @@ namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage.Loading
         }
     }
 }
+#endif

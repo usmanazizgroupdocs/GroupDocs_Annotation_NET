@@ -5,9 +5,9 @@ namespace GroupDocs.Annotation.Examples.CSharp
 {
     internal static class Constants
     {
-        public const string LicensePath = "C://licenses//GroupDocs.Annotation.lic";
-        public const string SamplesPath = "../../../Resources/SampleFiles";
-        public const string OutputPath = "../../Output/";
+        public const string LicensePath = "./Resources/GroupDocs.Annotation.lic";
+        public const string SamplesPath = "./Resources/SampleFiles";
+        public const string OutputPath = "./Results/Output/";
         public static string INPUT => GetSampleFilePath("input.pdf");
         public static string ANNOTATED_WITH_REPLIES => GetSampleFilePath("annotated_with_replies.pdf");
         
@@ -21,7 +21,9 @@ namespace GroupDocs.Annotation.Examples.CSharp
             string outputDirectory = Path.Combine(OutputPath, Path.GetFileNameWithoutExtension(callerFilePath));
             if (!Directory.Exists(outputDirectory))
                 Directory.CreateDirectory(outputDirectory);
-            return outputDirectory;
+
+            string path = Path.GetFullPath(outputDirectory);
+            return path;
         }
     }
 }
