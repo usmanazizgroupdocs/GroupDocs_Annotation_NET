@@ -56,7 +56,6 @@
     <None Include="$(MSBuildThisFileDirectory)Resources\SampleFiles\annotated_with_replies.pdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="$(MSBuildThisFileDirectory)Resources\SampleFiles\Conholdate.Total.Product.Family.lic" />
     <None Include="$(MSBuildThisFileDirectory)Resources\SampleFiles\input.pdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
