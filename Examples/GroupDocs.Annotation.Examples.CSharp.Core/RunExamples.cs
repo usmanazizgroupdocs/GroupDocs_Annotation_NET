@@ -61,8 +61,24 @@ namespace GroupDocs.Annotation.Examples.CSharp
             ExtractAnnotationsFromDocument.Run();
             #endregion
 
-            #region Remove annotation from document
-            RemoveAnnotationFromDocument.Run();
+            #region Remove annotation from document by Annotation
+            RemoveAnnotationByAnnotation.Run();
+            #endregion
+
+            #region Remove annotation from document by Id
+            RemoveAnnotationById.Run();
+            #endregion
+
+            #region Remove annotations from document by Annotations
+            RemoveAnnotationsByAnnotations.Run();
+            #endregion
+
+            #region Remove annotations from document by Ids
+            RemoveAnnotationsByIds.Run();
+            #endregion
+
+            #region Remove annotations from document using SaveOptions
+            RemoveAnnotationUsingSaveOptions.Run();
             #endregion
 
             #region Generate document pages preview
@@ -95,6 +111,14 @@ namespace GroupDocs.Annotation.Examples.CSharp
 
             #region Add ellipse annotation
             AddEllipseAnnotation.Run();
+            #endregion
+
+            #region Add image annotation using local path
+            AddImageAnnotationLocalPath.Run();
+            #endregion
+
+            #region Add image annotation using remote path
+            AddImageAnnotationRemotePath.Run();
             #endregion
 
             #region Add link annotation

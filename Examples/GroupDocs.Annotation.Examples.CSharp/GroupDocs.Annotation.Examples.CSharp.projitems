@@ -24,6 +24,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddArrowAnnotation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddDistanceAnnotation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddEllipseAnnotation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddImageAnnotationLocalPath.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddImageAnnotationRemotePath.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddLinkAnnotation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddPointAnnotation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddPolylineAnnotation.cs" />
@@ -39,7 +41,11 @@
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\ExtractAnnotationsFromDocument.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\GetFileInfo.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\GetSupportedFileFormats.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\RemoveAnnotationFromDocument.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\RemoveAnnotationByAnnotation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\RemoveAnnotationById.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\RemoveAnnotationsByAnnotations.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\RemoveAnnotationsByIds.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\RemoveAnnotationUsingSaveOptions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\RemoveReplies.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\RemoveRepliesById.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\RemoveRepliesByUserName.cs" />
@@ -56,6 +62,7 @@
     <None Include="$(MSBuildThisFileDirectory)Resources\SampleFiles\annotated_with_replies.pdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="$(MSBuildThisFileDirectory)Resources\SampleFiles\Conholdate.Total.Product.Family.lic" />
     <None Include="$(MSBuildThisFileDirectory)Resources\SampleFiles\input.pdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

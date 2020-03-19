@@ -1,21 +1,21 @@
-﻿using GroupDocs.Annotation.Options;
-using System;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Text;
+using GroupDocs.Annotation.Options;
 
 namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage
 {
-    /// <summary>
-    /// This example demonstrates how to remove annotations from document
-    /// </summary>
-    class RemoveAnnotationFromDocument
+    class RemoveAnnotationsByAnnotations
     {
         public static void Run()
         {
             string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT));
 
-            using (Annotator annotator = new Annotator(Constants.ANNOTATED))
+            using (Annotator annotator = new Annotator(Constants.ANNOTATED, new LoadOptions { ImportAnnotations = true }))
             {
-                annotator.Save(outputPath, new SaveOptions() { AnnotationTypes = AnnotationType.None });
+                annotator.Remove(annotator.Get());
+                annotator.Save(outputPath);
             }
             Console.WriteLine($"\nDocument saved successfully.\nCheck output in {outputPath}.");
         }
