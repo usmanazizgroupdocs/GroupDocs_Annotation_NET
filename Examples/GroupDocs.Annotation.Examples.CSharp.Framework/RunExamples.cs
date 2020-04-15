@@ -25,8 +25,24 @@ namespace GroupDocs.Annotation.Examples.CSharp
             GetSupportedFileFormats.Run();
             #endregion
 
-            #region Get file info
+            #region Get All version keys from document
             GetFileInfo.Run();
+            #endregion
+
+            #region Get List of Annotations from document using version key
+            GetListOfAnnotationsUsingVersionKey.Run();
+            #endregion
+
+            #region Get file info
+            GetAllVersionKeysOnDocument.Run();
+            #endregion
+
+            #region Getting Size Of Document Pages
+            GettingSizeOfDocumentPage.Run();
+            #endregion
+
+            #region Generating preview without comments
+            GeneratePreviewWithoutComments.Run();
             #endregion
 
             #region Load document from local disk
@@ -57,6 +73,10 @@ namespace GroupDocs.Annotation.Examples.CSharp
             //LoadDocumentFromAzure.Run();
             #endregion
 
+            #region Load document from custom version
+            LoadingAnnotatedDocumentVersion.Run();
+            #endregion
+
             #region Extract annotations from document
             ExtractAnnotationsFromDocument.Run();
             #endregion
@@ -83,6 +103,10 @@ namespace GroupDocs.Annotation.Examples.CSharp
 
             #region Generate document pages preview
             GenerateDocumentPagesPreview.Run();
+            #endregion
+
+            #region Saving Document version with custom name
+            SavingDocumentVersionWithCustomName.Run();
             #endregion
 
             #region Saving specific page range

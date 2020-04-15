@@ -10,6 +10,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\GenerateDocumentPagesPreview.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\GeneratePreviewWithoutComments.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\GetAllVersionKeysOnDocument.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\GetListOfAnnotationsUsingVersionKey.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Loading\LoadingAnnotatedDocumentVersion.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Loading\LoadingDocumentsFromDifferentSources\LoadDocumentFromAmazonS3.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Loading\LoadingDocumentsFromDifferentSources\LoadDocumentFromAzure.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Loading\LoadingDocumentsFromDifferentSources\LoadDocumentFromFtp.cs" />
@@ -18,6 +22,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Loading\LoadingDocumentsFromDifferentSources\LoadDocumentFromUrl.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Loading\LoadPasswordProtectedDocuments.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Saving\FilteringAnnotationTypes.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Saving\SavingDocumentVersionWithCustomName.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Saving\SavingOnlyPagesWithAnnotations.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Saving\SavingSpecificPageRange.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddAreaAnnotation.cs" />
@@ -41,6 +46,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\ExtractAnnotationsFromDocument.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\GetFileInfo.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\GetSupportedFileFormats.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\GettingSizeOfDocumentPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\RemoveAnnotationByAnnotation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\RemoveAnnotationById.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\RemoveAnnotationsByAnnotations.cs" />
