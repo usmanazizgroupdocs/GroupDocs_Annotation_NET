@@ -105,8 +105,24 @@ namespace GroupDocs.Annotation.Examples.CSharp
             GenerateDocumentPagesPreview.Run();
             #endregion
 
-            #region Saving Document version with custom name
-            SavingDocumentVersionWithCustomName.Run();
+            #region Saving Document as Input File that was used to create annotator
+            SavingAsInputFromFilePath.Run();
+            #endregion
+
+            #region Saving Document as Input File that was used to create annotator
+            SavingAsInputFromFilePath.Run();
+            #endregion
+
+            #region Saving Document as Input File that was used to create annotator
+            SavingAsInputFromFilePathWithOptions.Run();
+            #endregion
+
+            #region Saving Document as Input File that was used to create annotator
+            SavingAsInputFromFileStream.Run();
+            #endregion
+
+            #region Saving Document as Input File that was used to create annotator
+            SavingAsInputFromFileStreamWithOptions.Run();
             #endregion
 
             #region Saving specific page range

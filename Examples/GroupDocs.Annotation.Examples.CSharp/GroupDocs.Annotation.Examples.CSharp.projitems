@@ -22,6 +22,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Loading\LoadingDocumentsFromDifferentSources\LoadDocumentFromUrl.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Loading\LoadPasswordProtectedDocuments.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Saving\FilteringAnnotationTypes.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Saving\SavingAsInputFromFilePath.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Saving\SavingAsInputFromFilePathWithOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Saving\SavingAsInputFromFileSteam.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Saving\SavingAsInputFromFileStreamWithOptions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Saving\SavingDocumentVersionWithCustomName.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Saving\SavingOnlyPagesWithAnnotations.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Saving\SavingSpecificPageRange.cs" />
