@@ -12,8 +12,10 @@ namespace GroupDocs.Annotation.Examples.CSharp
         public static string ANNOTATED_WITH_REPLIES => GetSampleFilePath("annotated_with_replies.pdf");
         
         public static string INPUT_PROTECTED => GetSampleFilePath("input_protected.pdf");
+        public static string ANNOTATED_WITH_VERSIONS => GetSampleFilePath("annotated_with_versions.pdf");
         public static string RESULT => GetSampleFilePath("result.pdf");
         public static string ANNOTATED => GetSampleFilePath("annotated.pdf");
+        public static string ANNOTATED_DOCX => GetSampleFilePath("annotated.docx");
         private static string GetSampleFilePath(string filePath) => Path.Combine(SamplesPath, filePath);
 
         public static string GetOutputDirectoryPath([CallerFilePath] string callerFilePath = null)

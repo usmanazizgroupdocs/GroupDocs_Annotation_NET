@@ -11,6 +11,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "GroupDocs.Annotation.Exampl
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		GroupDocs.Annotation.Examples.CSharp\GroupDocs.Annotation.Examples.CSharp.projitems*{612118c6-42e6-4822-b5bb-e83d27dbf08d}*SharedItemsImports = 5
 		GroupDocs.Annotation.Examples.CSharp\GroupDocs.Annotation.Examples.CSharp.projitems*{663edcb2-e917-4487-8a41-1adab5e18559}*SharedItemsImports = 13
 		GroupDocs.Annotation.Examples.CSharp\GroupDocs.Annotation.Examples.CSharp.projitems*{b910d08a-c433-409c-b8f4-0ee60b9d723e}*SharedItemsImports = 4
 	EndGlobalSection

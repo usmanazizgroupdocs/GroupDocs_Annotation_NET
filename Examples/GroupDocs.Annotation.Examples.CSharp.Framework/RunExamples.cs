@@ -25,8 +25,24 @@ namespace GroupDocs.Annotation.Examples.CSharp
             GetSupportedFileFormats.Run();
             #endregion
 
-            #region Get file info
+            #region Get All version keys from document
             GetFileInfo.Run();
+            #endregion
+
+            #region Get List of Annotations from document using version key
+            GetListOfAnnotationsUsingVersionKey.Run();
+            #endregion
+
+            #region Get file info
+            GetAllVersionKeysOnDocument.Run();
+            #endregion
+
+            #region Getting Size Of Document Pages
+            GettingSizeOfDocumentPage.Run();
+            #endregion
+
+            #region Generating preview without comments
+            GeneratePreviewWithoutComments.Run();
             #endregion
 
             #region Load document from local disk
@@ -57,16 +73,56 @@ namespace GroupDocs.Annotation.Examples.CSharp
             //LoadDocumentFromAzure.Run();
             #endregion
 
+            #region Load document from custom version
+            LoadingAnnotatedDocumentVersion.Run();
+            #endregion
+
             #region Extract annotations from document
             ExtractAnnotationsFromDocument.Run();
             #endregion
 
-            #region Remove annotation from document
-            RemoveAnnotationFromDocument.Run();
+            #region Remove annotation from document by Annotation
+            RemoveAnnotationByAnnotation.Run();
+            #endregion
+
+            #region Remove annotation from document by Id
+            RemoveAnnotationById.Run();
+            #endregion
+
+            #region Remove annotations from document by Annotations
+            RemoveAnnotationsByAnnotations.Run();
+            #endregion
+
+            #region Remove annotations from document by Ids
+            RemoveAnnotationsByIds.Run();
+            #endregion
+
+            #region Remove annotations from document using SaveOptions
+            RemoveAnnotationUsingSaveOptions.Run();
             #endregion
 
             #region Generate document pages preview
             GenerateDocumentPagesPreview.Run();
+            #endregion
+
+            #region Saving Document as Input File that was used to create annotator
+            SavingAsInputFromFilePath.Run();
+            #endregion
+
+            #region Saving Document as Input File that was used to create annotator
+            SavingAsInputFromFilePathWithOptions.Run();
+            #endregion
+
+            #region Saving Document as Input File that was used to create annotator
+            SavingAsInputFromFileStream.Run();
+            #endregion
+
+            #region Saving Document as Input File that was used to create annotator
+            SavingAsInputFromFileStreamWithOptions.Run();
+            #endregion
+
+            #region Saving Document version with custom name
+            SavingDocumentVersionWithCustomName.Run();
             #endregion
 
             #region Saving specific page range
@@ -96,6 +152,14 @@ namespace GroupDocs.Annotation.Examples.CSharp
 
             #region Add ellipse annotation
             AddEllipseAnnotation.Run();
+            #endregion
+
+            #region Add image annotation using local path
+            AddImageAnnotationLocalPath.Run();
+            #endregion
+
+            #region Add image annotation using remote path
+            AddImageAnnotationRemotePath.Run();
             #endregion
 
             #region Add link annotation

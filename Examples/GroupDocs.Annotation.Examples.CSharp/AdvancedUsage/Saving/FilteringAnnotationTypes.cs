@@ -22,13 +22,13 @@ namespace GroupDocs.Annotation.Examples.CSharp.AdvancedUsage.Saving
                 {
                     Box = new Rectangle(100, 100, 100, 100),
                     BackgroundColor = 65535,
-                    PageNumber = 1
+                    PageNumber = 0
                 };
                 EllipseAnnotation ellipse = new EllipseAnnotation()
                 {
                     Box = new Rectangle(100, 100, 100, 100),
                     BackgroundColor = 123456,
-                    PageNumber = 4
+                    PageNumber = 1
                 };
                 annotator.Add(new List<AnnotationBase>() { area, ellipse });
                 annotator.Save(outputPath, new SaveOptions { AnnotationTypes = AnnotationType.Ellipse});
