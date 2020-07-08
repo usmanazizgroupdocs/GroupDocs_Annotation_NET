@@ -8,4 +8,6 @@ keywords: GroupDocs.Annotation Developer Guide, GroupDocs.Annotation .NET Develo
 productName: GroupDocs.Annotation for .NET
 hideChildren: False
 ---
-{{< alert style="info" >}}This section describes some basic and advanced use cases of GroupDocs.Annotation for .NET. Please refer to GitHub repository for more examples and samples.{{< /alert >}}
+{{< alert style="info" >}}
+This section describes some basic and advanced use cases of GroupDocs.Annotation for .NET. Please refer to [GitHub repository](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET) for more examples and samples.
+{{< /alert >}}

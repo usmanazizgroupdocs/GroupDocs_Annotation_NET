@@ -30,66 +30,58 @@ using (Annotator annotator = new Annotator("input.pdf"))
 	annotator.Save("result.pdf", new SaveOptions { Version = "CUSTOM_VERSION" });
 }
 ```
-
-{{< alert style="info" >}}Type of Version property is object, so it support any type, and you can use any variable as version variable{{< /alert >}}
-
-### Get List of All version keys on a document
-
+{{< alert style="info" >}}
+Type of [Version](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/saveoptions/properties/version) property is object, so it support any type, and you can use any variable as version variable
+{{< /alert >}}
+# Get List of All version keys on a document
 If you don't know what versions were added earlier or want to know versions count 
-
 Here the code that demonstrates how to get list of versions keys, you could do this calling [GetVersionsList](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/methods/getversionslist) method of [Annotator](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation/annotator):
-
 ```csharp
 using (Annotator annotator = new Annotator("result.pdf")) { 
       List<object> versionKeys = annotator.GetVersionsList();
 }
 ```
-
-{{< alert style="info" >}}Annotator.GetVersionList() returns list of objects because it supports any type of key. But if you used some specified keys as string - you can convert it.{{< /alert >}}
-
-### Get List of Annotations using version key
-
+{{< alert style="info" >}}
+[Annotator.GetVersionList()](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/methods/getversionslist) returns list of objects because it supports any type of key. But if you used some specified keys as string - you can convert it.
+{{< /alert >}}
+# Get List of Annotations using version key
 If you need to get list of annotations you can use [Annotator.GetVersion()](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/methods/getversionslist) method
-
 Here code that demonstrates how to get list of annotations from specific version of document
-
 ```csharp
 using (Annotator annotator = new Annotator("result.pdf"))
 {
     List<AnnotationBase> annotations = annotator.GetVersion("CUSTOM_VERSION");
 }
 ```
-
-{{< alert style="info" >}}GetVersion supports any type, and you can use any variable as version.{{< /alert >}}
-
-### Load Document of custom Version
-
+{{< alert style="info" >}}
+[GetVersion](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/methods/getversionslist) supports any type, and you can use any variable as version.
+{{< /alert >}}
+# Load Document of custom Version
 Using [LoadOptions.Version](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/loadoptions/properties/version) property you could load specific version of annotated document
-
 Here the code that demonstrates how load version using version property:
-
 ```csharp
  using (Annotator annotator = new Annotator($"result.{ext}", new LoadOptions { Version = "CUSTOM_VERSION" }))
 {
 	annotator.Save("result_loaded.pdf");
 }
 ```
-
 ## More resources
 ### Advanced Usage Topics
 To learn more about document annotating features, please refer to the [advanced usage section]({{< ref "annotation/net/developer-guide/advanced-usage/_index.md" >}}).
-
 ### GitHub Examples
 You may easily run the code above and see the feature in action in our GitHub examples:
-
 *   [GroupDocs.Annotation for .NET examples, plugins, and showcase](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET)
+    
 *   [GroupDocs.Annotation for Java examples, plugins, and showcase](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-Java)
-*   [Document Annotation for .NET MVC UI Example](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-MVC)
+    
+*   [Document Annotation for .NET MVC UI Example](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-MVC) 
+    
 *   [Document Annotation for .NET App WebForms UI Modern Example](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET-WebForms)
+    
 *   [Document Annotation for Java App Dropwizard UI Modern Example](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-Java-Dropwizard)
+    
 *   [Document Annotation for Java Spring UI Example](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-Java-Spring)
     
-
 ### Free Online App
 Along with full-featured .NET library we provide simple but powerful free Apps.
 You are welcome to annotate your PDF, DOC or DOCX, XLS or XLSX, PPT or PPTX, PNG and other documents with free to use online **[GroupDocs Annotation App](https://products.groupdocs.app/annotation)**.
