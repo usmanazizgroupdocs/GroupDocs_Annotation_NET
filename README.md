@@ -29,12 +29,6 @@ Directory | Description
 - Remove previously added annotations from a document.
 - Update specific annotation properties (size, color etc.).
 
-## New Features in Version 20.6
-
-- Improved `PDF` document *annotation accuracy*, *refactoring* and *optimized annotating* process.
-
-For the detailed notes, please visit [GroupDocs.Annotation for .NET 20.6 Release Notes](https://docs.groupdocs.com/display/annotationnet/GroupDocs.Annotation+for+.NET+20.6+Release+Notes).
-
 ## Microsoft Office Formats
 
 **Microsoft Word:** DOC, DOCM, DOCX, DOT, DOTM, DOTX, RTF\
@@ -61,6 +55,8 @@ Annotation type | Supported Objects
 **Watermark** | Diagonal, Horizontal
 
 ## Platform Independence
+
+GroupDocs.Annotation for .NET supports following Frameworks, Operating Systems & Development Environments.
 
 ### Frameworks
 
