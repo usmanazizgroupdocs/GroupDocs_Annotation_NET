@@ -37,52 +37,52 @@ For the detailed notes, please visit [GroupDocs.Annotation for .NET 20.6 Release
 
 ## Microsoft Office Formats
 
-**Microsoft Word:** DOC, DOCM, DOCX, DOT, DOTM, DOTX, RTF
-**Microsoft Excel:** XLS, XLSB, XLSM, XLSX
-**Microsoft PowerPoint:** PPT, PPTX, PPSX, PPS
-**Microsoft Visio:** VSD, VSDX, VSS, VST
+**Microsoft Word:** DOC, DOCM, DOCX, DOT, DOTM, DOTX, RTF\
+**Microsoft Excel:** XLS, XLSB, XLSM, XLSX\
+**Microsoft PowerPoint:** PPT, PPTX, PPSX, PPS\
+**Microsoft Visio:** VSD, VSDX, VSS, VST\
 
 ## Other Document Formats
 
-**Portable:** PDF (PDF/A-1a, PDF/A-1b, PDF/A-2a)
-**OpenDocument:** ODT, ODS, ODP
-**Images:** TIF, TIFF, JPG, JPEG, PNG, BMP
-**AutoCAD:** DWG, DXF
-**Email:** EML
-**Web:** HTML
-**Others:** DCM
+**Portable:** PDF (PDF/A-1a, PDF/A-1b, PDF/A-2a)\
+**OpenDocument:** ODT, ODS, ODP\
+**Images:** TIF, TIFF, JPG, JPEG, PNG, BMP\
+**AutoCAD:** DWG, DXF\
+**Email:** EML\
+**Web:** HTML\
+**Others:** DCM\
 
 ## Supported Graphic Annotation Types
 
-**Area:** marks an area with a rectangle
-**Arrow:** draws an arrow on a document
-**Distance:** measures a distance between objects in a document
-**Ellipse:** draws elliptic annotation in a document
-**Point:** sticks comments to any point in a document
-**Polyline:** draws shapes and freehand lines
-**Resource Redaction:** fills black rectangle with fixed position
-**TextField:** adds rectangle with a text inside
+**Area:** marks an area with a rectangle.\
+**Arrow:** draws an arrow on a document.\
+**Distance:** measures a distance between objects in a document.\
+**Ellipse:** draws elliptic annotation in a document.\
+**Point:** sticks comments to any point in a document.\
+**Polyline:** draws shapes and freehand lines.\
+**Resource Redaction:** fills black rectangle with fixed position.\
+**TextField:** adds rectangle with a text inside.\
 
 ## Supported Text Annotation Types
 
-**Highlight:** highlights and comments selected text
-**Link:** adds a hyperlink to the document
-**Replacement:** replaces original text with user’s text
-**Strikeout:** marks text with a strikethrough styling
-**Text Redaction:** fills part of text with black rectangle
-**Underline:** marks text with an underline styling
+**Highlight:** highlights and comments selected text.\
+**Link:** adds a hyperlink to the document.\
+**Replacement:** replaces original text with user’s text.\
+**Strikeout:** marks text with a strikethrough styling.\
+**Text Redaction:** fills part of text with black rectangle.\
+**Underline:** marks text with an underline styling.\
 
 ## Supported Watermark Annotation Types
 
-**Diagonal:** adds diagonal text watermark
-**Horizontal:** adds horizontal text watermark
+**Diagonal:** adds diagonal text watermark.\
+**Horizontal:** adds horizontal text watermark.\
 
 ## Supported Platforms
 
-**.NET Standard 2.0:** Any type of .NET Standard 2.0 application is supported since Q4 2019.
-**.NET Framework:** Any type of .NET Framework version 2.0 (or later) application is supported - ASP.NET, Web Services, WinForms, WPF and others. Full support for 32-bit and 64-bit.
-**Windows Azure:** GroupDocs.Annotation for .NET runs on Windows Azure.
-**Mono:** Use GroupDocs.Annotation for .NET to build applications with Mono.
+**.NET Standard 2.0:** Any type of .NET Standard 2.0 application is supported since Q4 2019.\
+**.NET Framework:** Any type of .NET Framework version 2.0 (or later) application is supported - ASP.NET, Web Services, WinForms, WPF and others. Full support for 32-bit and 64-bit.\
+**Windows Azure:** GroupDocs.Annotation for .NET runs on Windows Azure.\
+**Mono:** Use GroupDocs.Annotation for .NET to build applications with Mono.\
 
 ## Getting Started with GroupDocs.Annotation for .Net
 
