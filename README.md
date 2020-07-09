@@ -48,40 +48,17 @@ Directory | Description
 
 ## Annotation Objects
 
-Annotation type | Supported Objects
---------- | -----------
-**Graphic Annotation** | Area, Arrow, Distance, Ellipse, Point, Polyline, Resource Redaction, TextField 
-**Text Annotation** | Highlight, Link, Replacement, Strikeout, Reduction, Underline
-**Watermark** | Diagonal, Horizontal
+**Graphic Annotation:** Area, Arrow, Distance, Ellipse, Point, Polyline, Resource Redaction, TextField 
+**Text Annotation:** Highlight, Link, Replacement, Strikeout, Reduction, Underline
+**Watermark:** Diagonal, Horizontal
 
-## Platform Independence
+## Develop & Deploy GroupDocs.Annotation Anywhere
 
-GroupDocs.Annotation for .NET supports following Frameworks, Operating Systems & Development Environments.
+**Frameworks:** NET Standard 2.0, .NET Framework 2.0 or higher, .NET Core 2.0 or higher, Mono Framework 1.2 or higher\
+**Operating Systems:** Linux, Mac OS X, Windows Desktop (x86 & x64), Windows Server (x86 & x64), Windows Azure\
+**Development Environments:** Microsoft Visual Studio, Xamarin.Android, Xamarin.IOS, Xamarin.Mac, MonoDevelop
 
-### Frameworks
-
-- .NET Standard 2.0
-- .NET Framework 2.0 or higher
-- .NET Core 2.0 or higher
-- Mono Framework 1.2 or higher
-
-### Operating Systems
-
-- Windows Desktop (x86 & x64)
-- Windows Server (x86 & x64)
-- Windows Azure
-- Linux
-- Mac OS X
-
-### Development Environments
-
-- Microsoft Visual Studio
-- Xamarin.Android
-- Xamarin.IOS
-- Xamarin.Mac
-- MonoDevelop
-
-## Getting Started with GroupDocs.Annotation for .Net
+## Getting Started with GroupDocs.Annotation for .NET
 
 Are you ready to give GroupDocs.Annotation for .NET a try? Simply execute `Install-Package GroupDocs.Annotation` from Package Manager Console in Visual Studio to fetch & reference GroupDocs.Annotation assembly in your project. If you already have GroupDocs.Annotation for .Net and want to upgrade it, please execute `Update-Package GroupDocs.Annotation` to get the latest version.
 
