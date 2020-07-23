@@ -25,7 +25,6 @@ Here are the steps to generate document preview with GroupDocs.Annotation API:
 
     
 Here a [PreviewOptions](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.options/previewoptions) class main properties:
-https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/releasepagestream
 *   **[CreatePageStream](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/createpagestream)** - Delegate which defines method to create output page preview stream;
 *   **[ReleasePageStream](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/releasepagestream)** - Delegate which defines method to remove output page preview stream. This is can be used when need advanced control for resources handling.
 *   **[Width](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/width)** - Preview image width. This property used when need customize output image width;
