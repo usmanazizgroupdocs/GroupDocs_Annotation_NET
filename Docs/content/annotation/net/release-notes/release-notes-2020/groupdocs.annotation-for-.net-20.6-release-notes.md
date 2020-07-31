@@ -2,7 +2,7 @@
 id: groupdocs-annotation-for-net-20-6-release-notes
 url: annotation/net/groupdocs-annotation-for-net-20-6-release-notes
 title: GroupDocs.Annotation for .NET 20.6 Release Notes
-weight: 79
+weight: 70
 description: ""
 keywords: 
 productName: GroupDocs.Annotation for .NET

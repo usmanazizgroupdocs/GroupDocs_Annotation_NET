@@ -52,6 +52,7 @@ using (Annotator annotator = new Annotator("input.pdf"))
         PenStyle = PenStyle.Dot,
         PenWidth = 3,
         FontFamily = "Arial",
+        TextHorizontalAlignment = HorizontalAlignment.Center,
         Replies = new List<Reply>
         {
         	new Reply

@@ -47,6 +47,8 @@ using (Annotator annotator = new Annotator("input.pdf"))
         FontSize = 12,
         Message = "This is watermark annotation",
         Opacity = 0.7,
+        HorizontalAlignment = HorizontalAlignment.Center,
+        VerticalAlignment = VerticalAlignment.Center,
         Replies = new List<Reply>
         {
         	new Reply

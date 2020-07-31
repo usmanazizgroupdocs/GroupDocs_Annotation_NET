@@ -36,7 +36,8 @@ using (Annotator annotator = new Annotator("input.pdf"))
                     Box = new Rectangle(100, 100, 100, 100),
                     Opacity = 0.7,
                     PageNumber = 0,
-                    ImagePath = "www.google.com.ua/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"
+                    ImagePath = "www.google.com.ua/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png",
+                    Angle = 100
                 };
                 annotator.Add(area);
                 annotator.Save("result.pdf");
