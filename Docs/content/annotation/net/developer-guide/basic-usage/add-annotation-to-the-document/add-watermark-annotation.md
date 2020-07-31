@@ -20,7 +20,9 @@ There is an ability to specify the next properties for [WatermarkAnnotation](ht
 *   [FontFamily](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/watermarkannotation/properties/fontfamily) - font of annotation text;
 *   [FontSize](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/watermarkannotation/properties/fontsize) - size of text font;
 *   [Opacity](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/watermarkannotation/properties/opacity) - allows to set annotation opacity;
-*   [Angle](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/watermarkannotation/properties/angle) - watermark text angle.
+*   [Angle](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/watermarkannotation/properties/angle) - watermark text angle;
+*   [VerticalAlignment]() - defines vertical alignment on document;
+*   [HorizontalAlignment]() - defines horizontal alignment on document.
 
 Follow these steps to add Watermark annotation to document:
 

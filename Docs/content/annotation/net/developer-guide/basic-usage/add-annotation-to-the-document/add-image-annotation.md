@@ -18,6 +18,7 @@ There is an ability to specify the next properties for [ImageAnnotation](https:
 *   [Box](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/imageannotation/properties/box) – defines annotation position at document page using [Rectangle](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models/rectangle) structure;
     (image will be resized for your custom width and height)
 *   [Opacity](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/imageannotation/properties/opacity) – allows to set annotation opacity (present in all supported formats, examples of it you can see above);
+*   [Angle]() – defines annotation rotation angle.
 
 Follow these steps to add Highlight annotation to document:
 

@@ -23,7 +23,8 @@ There is an ability to specify the next properties for [TextFieldAnnotation](ht
 *   [Opacity](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/textfieldannotation/properties/opacity) - allows to set annotation opacity;
 *   [PenStyle](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/textfieldannotation/properties/penstyle) - defines frame line style (solid, dash, dot etc.);
 *   [PenWidth](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/textfieldannotation/properties/penwidth) - defines frame line width in pixels;
-*   [PenColor](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/textfieldannotation/properties/pencolor) - defines frame color.
+*   [PenColor](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/textfieldannotation/properties/pencolor) - defines frame color;
+*   [TextHorizontalAlignment]() - defines text horizontal alignment.
 
 Follow these steps to add [TextField](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/textfieldannotation) annotation to document: 
 
