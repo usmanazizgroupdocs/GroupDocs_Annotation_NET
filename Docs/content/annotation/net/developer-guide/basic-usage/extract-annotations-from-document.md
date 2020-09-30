@@ -22,7 +22,7 @@ The following code demonstrates how to extract annotation metadata from document
 
 ```csharp
 // for using this example input file ("annotated.pdf") must be with annotations
-using (Annotator annotator = new Annotator("annotated.pdf", new LoadOptions() { ImportAnnotations = true }))
+using (Annotator annotator = new Annotator("annotated.pdf"))
 {
 	List<AnnotationBase> annotations = annotator.Get();
     XmlSerializer formatter = new XmlSerializer(typeof(List<AnnotationBase>));

@@ -11,7 +11,7 @@ hideChildren: False
 [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) provides and ability to programmatically update annotation replies by accessing them by their index inside [Replies](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/annotationbase/properties/replies) collection.
 
 Here is a steps to update annotation reply (considered that we already have some reply added to annotation)
-*   Instantiate [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream with instantiated [LoadOptions](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.options/loadoptions) with [ImportAnnotations](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/loadoptions/properties/importannotations) property set to `true`;
+*   Instantiate [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
 *   Call [Get](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/methods/get) method of [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object and obtain collection of document annotations;
 *   Access desired reply object inside [Replies](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/annotationbase/properties/replies) collection by its index (zero-based) and update its properties as needed;
 *   Call [Update](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/methods/update) method of [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with passed annotations;
@@ -22,7 +22,7 @@ The following code demonstrates how to update reply by index: 
 
 ```csharp
 // NOTE: Input document already contain annotations with replies
-using (Annotator annotator = new Annotator("result.pdf", new LoadOptions { ImportAnnotations = true }))
+using (Annotator annotator = new Annotator("result.pdf"))
 {
 	// Obtain annotations collection from document
 	List<AnnotationBase> annotations = annotator.Get();

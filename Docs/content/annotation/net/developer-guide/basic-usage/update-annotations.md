@@ -10,7 +10,7 @@ hideChildren: False
 ---
 Sometimes it's needed to change different annotation properties - move annotation to another position within document, change annotation size, color, text or even select different annotation type. You can easily do this using [**GroupDocs.Annotation**](https://products.groupdocs.com/annotation/net) by specifying annotation [Id property](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.models.annotationmodels/annotationbase/properties/id) (which is unique for each annotation object within document) and other updated annotation properties. Another way is to update multiple annotations at once - you just need to provide collection of updated annotation objects which will replace all existing document annotations.  
 
-*   Instantiate [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream with instantiated [LoadOptions](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.options/loadoptions) with `ImportAnnotations = true`;
+*   Instantiate [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
 *   Create some [AnnotationBase](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.models.annotationmodels/annotationbase) implementation and set Id of existed annotation (if annotation with that Id not found, nothing will be changed) or path list of annotations (all existed annotations will be removed);
 *   Call [Update](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/update/index) method of [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with passed annotations;
 *   Call [Save](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator/methods/save/index) method with resultant document path or stream and [SaveOptions](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.options/saveoptions) object;
@@ -47,7 +47,7 @@ using (Annotator annotator = new Annotator("input.pdf"))
             }
 
             // open annotated document
-            using (Annotator annotator = new Annotator("result.pdf", new LoadOptions { ImportAnnotations = true }))
+            using (Annotator annotator = new Annotator("result.pdf"))
             {
                 //assuming we are going to change some properties of existing annotation
                 AreaAnnotation updated = new AreaAnnotation

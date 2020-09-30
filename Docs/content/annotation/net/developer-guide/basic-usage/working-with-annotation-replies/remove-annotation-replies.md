@@ -10,7 +10,7 @@ hideChildren: False
 ---
 There is a quick and convenient way to remove specific or even all replies for some document annotation using **[GroupDocs.Annotation](https://products.groupdocs.com/annotation/net)** API. It is as easy as removing items from generic [List<T>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1) collection. In common case you have to follow these steps to delete replies:
 
-*   Instantiate [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream and with instantiated [LoadOptions](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.options/loadoptions) where [ImportAnnotations](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/loadoptions/properties/importannotations) property is set to **true**;
+*   Instantiate [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object with input document path or stream;
 *   Call [Get](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation/annotator/methods/get) method of [Annotator](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation/annotator) object and obtain collection of document annotations;
 *   Access desired annotation object and remove reply in a most suitable way:
     *   call [RemoveAt(Int32)](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.removeat) or [Remove(T)](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.remove) method to remove specific reply;
@@ -25,7 +25,7 @@ The easiest way for removing specific annotation reply is to delete by its index
 
 ```csharp
 // NOTE: Input document already contain annotations with replies
-using (Annotator annotator = new Annotator("result.pdf", new LoadOptions { ImportAnnotations = true }))
+using (Annotator annotator = new Annotator("result.pdf"))
 {
     // Obtain annotations collection from document
     List<AnnotationBase> annotations = annotator.Get();               
@@ -43,7 +43,7 @@ using (Annotator annotator = new Annotator("result.pdf", new LoadOptions { Impor
 
 ```csharp
 // NOTE: Input document already contain annotations with replies
-using (Annotator annotator = new Annotator("annotated_file_with_replies.pdf", new LoadOptions { ImportAnnotations = true }))
+using (Annotator annotator = new Annotator("annotated_file_with_replies.pdf"))
 {
     // Obtain annotations collection from document
     List<AnnotationBase> annotations = annotator.Get();
