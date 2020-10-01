@@ -12,7 +12,7 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage
         {
             string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT));
 
-            using (Annotator annotator = new Annotator(Constants.ANNOTATED, new LoadOptions { ImportAnnotations = true }))
+            using (Annotator annotator = new Annotator(Constants.ANNOTATED))
             {
                 annotator.Remove(new List<int>{0,1});
                 annotator.Save(outputPath);

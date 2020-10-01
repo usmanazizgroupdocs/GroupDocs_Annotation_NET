@@ -18,7 +18,7 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage
             string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "result" + Path.GetExtension(Constants.INPUT));
 
             // NOTE: Input document already contain annotations with replies
-            using (Annotator annotator = new Annotator(Constants.ANNOTATED_WITH_REPLIES, new LoadOptions { ImportAnnotations = true }))
+            using (Annotator annotator = new Annotator(Constants.ANNOTATED_WITH_REPLIES))
             {
                 // Obtain annotations collection from document
                 List<AnnotationBase> annotations = annotator.Get();

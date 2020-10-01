@@ -45,7 +45,7 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage
             }
 
             // open annotated document
-            using (Annotator annotator = new Annotator(outputPath, new LoadOptions { ImportAnnotations = true }))
+            using (Annotator annotator = new Annotator(outputPath))
             {
                 // suggest we want change some properties of existed annotation
                 AreaAnnotation updated = new AreaAnnotation

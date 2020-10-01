@@ -16,7 +16,7 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage
         {
             string outputPath = Path.Combine(Constants.GetOutputDirectoryPath(), "annotation.xml");
 
-            using (Annotator annotator = new Annotator(Constants.ANNOTATED, new LoadOptions() { ImportAnnotations = true }))
+            using (Annotator annotator = new Annotator(Constants.ANNOTATED))
             {
                 var annotations = annotator.Get();
                 XmlSerializer formatter = new XmlSerializer(typeof(List<AnnotationBase>));
