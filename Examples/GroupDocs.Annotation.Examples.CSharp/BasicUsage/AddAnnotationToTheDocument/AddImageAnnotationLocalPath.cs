@@ -22,7 +22,7 @@ namespace GroupDocs.Annotation.Examples.CSharp.BasicUsage.AddAnnotationToTheDocu
                     CreatedOn = DateTime.Now,
                     Opacity = 0.7,
                     PageNumber = 0,
-                    ImagePath = @"Resources\SampleFiles\google.png"
+                    ImagePath = Constants.PICTURE
                 };
                 annotator.Add(image);
                 annotator.Save(outputPath);
