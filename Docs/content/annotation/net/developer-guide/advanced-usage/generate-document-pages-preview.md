@@ -26,13 +26,14 @@ Here are the steps to generate document preview with GroupDocs.Annotation API:
     
 Here a [PreviewOptions](https://apireference.groupdocs.com/net/annotation/groupdocs.annotation.options/previewoptions) class main properties:
 *   **[CreatePageStream](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/createpagestream)** - Delegate which defines method to create output page preview stream;
-*   **[ReleasePageStream](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/releasepagestream)** - Delegate which defines method to remove output page preview stream. This is can be used when need advanced control for resources handling.
+*   **[ReleasePageStream](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/releasepagestream)** - Delegate which defines method to remove output page preview stream. This is can be used when need advanced control for resources handling;
 *   **[Width](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/width)** - Preview image width. This property used when need customize output image width;
 *   **[Height](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/height)** - Preview image height. This property used when need customize output image height;
 *   **[PageNumbers](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/pagenumbers)** - Page numbers that will be previewed;
-*   **[PreviewFormat](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/previewformat)** - Gets or sets the preview image format which provides ability to choose between image quality and size. **BMP** format should be used for the best image quality. **JPG** format will be useful in case of strict requirements to image size - it produces smallest image size (and faster loading image previews), but with lower quality than **BMP**. By default **PNG** format is selected - which is a golden mean between image quality and size.
+*   **[PreviewFormat](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/previewformat)** - Gets or sets the preview image format which provides ability to choose between image quality and size. **BMP** format should be used for the best image quality. **JPG** format will be useful in case of strict requirements to image size - it produces smallest image size (and faster loading image previews), but with lower quality than **BMP**. By default **PNG** format is selected - which is a golden mean between image quality and size;
 *   **[RenderComments](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/rendercomments)** - Default value is *true*. If it is not needed to display replies and comments at the page preview - set *RenderComments* property to *false* (replies and comments still will be stored inside document).  
-    Please notice, that *RenderComments* value will impact any document comments (doesn't matter if they were added by GroupDocs.Annotation or  some other application). This property affects only on WordProcessing documents
+    Please notice, that *RenderComments* value will impact any document comments (doesn't matter if they were added by GroupDocs.Annotation or  some other application). This property affects only on WordProcessing documents;
+*   **[WorksheetColumns](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/worksheetcolumns)** - List of objects [WorksheetColumnsRange](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/worksheetcolumnsrange) that indicates which columns to generate on specified worksheet.
 
 The following code snippet demonstrates how to generate document previews.
 
@@ -126,6 +127,34 @@ previewOptions.PreviewFormat = PreviewFormats.PNG;
 previewOptions.RenderComments = false;
 annotator.Document.GeneratePreview(previewOptions);
 ```
+
+## Generate Cells preview with specified columns
+
+Starting from 20.11 version it is possible to specify columns you want to generate on the sheet you selected.
+{{< alert style="info" >}}Supported only for CellsProcessign documents, other formats ignore this property{{< /alert >}}
+
+The following code snippet demonstrates how to use [WorksheetColumns](https://apireference.groupdocs.com/annotation/net/groupdocs.annotation.options/previewoptions/properties/worksheetcolumns) property.
+
+```csharp
+PreviewOptions previewOptions =
+    new PreviewOptions(pageNumber => new FileStream($"preview_pages/page{pageNumber}.png", FileMode.Create),
+        (number, stream) => stream.Dispose());
+previewOptions.WorksheetColumns.Add(new WorksheetColumnsRange("Sheet1", 2, 3));
+previewOptions.WorksheetColumns.Add(new WorksheetColumnsRange("Sheet1", 1, 1));
+
+using (Annotator annotator = new Annotator("input.xlsx"))
+{
+    annotator.Document.GeneratePreview(previewOptions);
+}
+```
+###
+In the following images you can see how the columns were generated in the range from the second to the third and the first after them. Columns are generated in the order you specify, each column is generated only once, so please keep this in mind while using this feature.
+
+### Original worksheet
+![](annotation/net/images/original_page.png)
+### Generated image file
+![](annotation/net/images/generated_page.png)
+
 
 ## More resources
 

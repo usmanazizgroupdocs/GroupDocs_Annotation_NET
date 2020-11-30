@@ -11,6 +11,7 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\GenerateDocumentPagesPreview.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\GeneratePreviewWithoutComments.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\GeneratePreviewWorksheetColumns.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\GetAllVersionKeysOnDocument.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\GetListOfAnnotationsUsingVersionKey.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Loading\LoadingAnnotatedDocumentVersion.cs" />

@@ -105,6 +105,10 @@ namespace GroupDocs.Annotation.Examples.CSharp
             GenerateDocumentPagesPreview.Run();
             #endregion
 
+            #region Generate document pages preview with specified worksheet columns
+            GeneratePreviewWorksheetColumns.Run();
+            #endregion
+
             #region Saving Document as Input File that was used to create annotator
             SavingAsInputFromFilePath.Run();
             #endregion

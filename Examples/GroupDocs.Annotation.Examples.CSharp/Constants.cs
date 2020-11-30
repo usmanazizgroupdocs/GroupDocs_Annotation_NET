@@ -17,7 +17,8 @@ namespace GroupDocs.Annotation.Examples.CSharp
         public static string RESULT => GetSampleFilePath("result.pdf");
         public static string ANNOTATED => GetSampleFilePath("annotated.pdf");
         public static string ANNOTATED_DOCX => GetSampleFilePath("annotated.docx");
-        private static string GetSampleFilePath(string filePath, [CallerFilePath] string callerFilePath =null )
+        public static string CELLS_INPUT => GetSampleFilePath("input.xlsx");
+        private static string GetSampleFilePath(string filePath, [CallerFilePath] string callerFilePath = null )
         {
             DirectoryInfo pathInfo = Directory.GetParent(callerFilePath);
             return Path.Combine(pathInfo+SamplesPath, filePath);
