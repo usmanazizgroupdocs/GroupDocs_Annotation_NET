@@ -1,3 +1,4 @@
+![Nuget](https://img.shields.io/nuget/v/groupdocs.annotation) ![Nuget](https://img.shields.io/nuget/dt/groupdocs.annotation) ![GitHub](https://img.shields.io/github/license/groupdocs-annotation/GroupDocs.Annotation-for-.NET)
 ## .NET API for Document Annotation
 
 GroupDocs.Annotation for .NET is a lightweight, yet powerful .NET library that seamlessly [integrates document annotation features](https://products.groupdocs.com/annotation/net) into your .NET applications. Apply graphic, text and watermark annotations on Office, OpenOffice, PDF documents as well as images & CAD drawings with simplest object model.
