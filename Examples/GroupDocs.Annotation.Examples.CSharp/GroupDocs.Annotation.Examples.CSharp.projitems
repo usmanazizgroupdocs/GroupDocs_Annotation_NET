@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>663edcb2-e917-4487-8a41-1adab5e18559</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>GroupDocs.Annotation.Examples.CSharp</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\GenerateDocumentPagesPreview.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\GeneratePreviewWithoutComments.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\GeneratePreviewWorksheetColumns.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\GetAllVersionKeysOnDocument.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\GetListOfAnnotationsUsingVersionKey.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Loading\LoadingAnnotatedDocumentVersion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Loading\LoadingDocumentsFromDifferentSources\LoadDocumentFromAmazonS3.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Loading\LoadingDocumentsFromDifferentSources\LoadDocumentFromAzure.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Loading\LoadingDocumentsFromDifferentSources\LoadDocumentFromFtp.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Loading\LoadingDocumentsFromDifferentSources\LoadDocumentFromLocalDisk.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Loading\LoadingDocumentsFromDifferentSources\LoadDocumentFromStream.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Loading\LoadingDocumentsFromDifferentSources\LoadDocumentFromUrl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Loading\LoadPasswordProtectedDocuments.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Saving\FilteringAnnotationTypes.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Saving\SavingAsInputFromFilePath.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Saving\SavingAsInputFromFilePathWithOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Saving\SavingAsInputFromFileSteam.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Saving\SavingAsInputFromFileStreamWithOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Saving\SavingDocumentVersionWithCustomName.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Saving\SavingOnlyPagesWithAnnotations.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Saving\SavingSpecificPageRange.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddAreaAnnotation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddArrowAnnotation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddDistanceAnnotation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddEllipseAnnotation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddImageAnnotationLocalPath.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddImageAnnotationRemotePath.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddLinkAnnotation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddPointAnnotation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddPolylineAnnotation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddResourcesRedactionAnnotation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddTextFieldAnnotation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddTextHighlightAnnotation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddTextRedactionAnnotation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddTextReplacementAnnotation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddTextStrikeoutAnnotation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddTextUnderlineAnnotation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddWatermarkAnnotation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddReplies.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\ExtractAnnotationsFromDocument.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\GetFileInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\GetSupportedFileFormats.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\GettingSizeOfDocumentPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\RemoveAnnotationByAnnotation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\RemoveAnnotationById.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\RemoveAnnotationsByAnnotations.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\RemoveAnnotationsByIds.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\RemoveAnnotationUsingSaveOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\RemoveReplies.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\RemoveRepliesById.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\RemoveRepliesByUserName.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\UpdateAnnotation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Constants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)QuickStart\SetLicenseFromFile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)QuickStart\SetLicenseFromStream.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)QuickStart\SetMeteredLicense.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Resources\SampleFiles\annotated.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Resources\SampleFiles\annotated_with_replies.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Resources\SampleFiles\Conholdate.Total.Product.Family.lic" />
+    <None Include="$(MSBuildThisFileDirectory)Resources\SampleFiles\input.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Resources\SampleFiles\input_protected.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Resources\SampleFiles\annotation.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>

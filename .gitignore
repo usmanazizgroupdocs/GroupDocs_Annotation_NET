@@ -233,4 +233,5 @@ _Pvt_Extensions
 .paket/paket.exe
 
 # FAKE - F# Make
-.fake/
+Examples/GroupDocs.Annotation.Examples.CSharp/Output/
+deploy_key
