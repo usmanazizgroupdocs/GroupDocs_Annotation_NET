@@ -2,7 +2,7 @@
 id: versioning-of-documents
 url: annotation/net/versioning-of-documents
 title: Versioning of annotated documents
-weight: 4
+weight: 3
 description: "Following this guide you will learn how to manage different versions of document using GroupDocs.Annotation for .NET API."
 keywords: Get different document versions, versions, Version management
 productName: GroupDocs.Annotation for .NET
