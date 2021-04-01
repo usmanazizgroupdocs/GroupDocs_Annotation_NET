@@ -44,6 +44,10 @@ namespace GroupDocs.Annotation.Examples.CSharp
             #region Generating preview without comments
             GeneratePreviewWithoutComments.Run();
             #endregion
+            
+            #region Generating preview without annotations
+            GeneratePreviewWithoutAnnotations.Run();
+            #endregion
 
             #region Load document from local disk
             LoadDocumentFromLocalDisk.Run();
@@ -107,6 +111,10 @@ namespace GroupDocs.Annotation.Examples.CSharp
 
             #region Generate document pages preview with specified worksheet columns
             GeneratePreviewWorksheetColumns.Run();
+            #endregion
+
+            #region Getting information about document's text content
+            GetDocumentTextContentInformation.Run();
             #endregion
 
             #region Saving Document as Input File that was used to create annotator

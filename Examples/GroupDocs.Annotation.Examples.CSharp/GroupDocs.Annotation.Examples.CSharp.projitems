@@ -13,6 +13,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\GeneratePreviewWithoutComments.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\GeneratePreviewWorksheetColumns.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\GetAllVersionKeysOnDocument.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\GetDocumentTextContentInformation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\GetListOfAnnotationsUsingVersionKey.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Loading\LoadingAnnotatedDocumentVersion.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Loading\LoadingDocumentsFromDifferentSources\LoadDocumentFromAmazonS3.cs" />
@@ -62,6 +63,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\RemoveRepliesByUserName.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\UpdateAnnotation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Constants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\GeneratePreviewWithoutAnnotations.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)QuickStart\SetLicenseFromFile.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)QuickStart\SetLicenseFromStream.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)QuickStart\SetMeteredLicense.cs" />
