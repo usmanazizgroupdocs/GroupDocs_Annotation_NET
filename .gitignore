@@ -235,3 +235,7 @@ _Pvt_Extensions
 # FAKE - F# Make
 Examples/GroupDocs.Annotation.Examples.CSharp/Output/
 deploy_key
+
+#License files
+*.lic
+
