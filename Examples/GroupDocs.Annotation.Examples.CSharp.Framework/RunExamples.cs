@@ -44,9 +44,21 @@ namespace GroupDocs.Annotation.Examples.CSharp
             #region Generating preview without comments
             GeneratePreviewWithoutComments.Run();
             #endregion
-            
+
             #region Generating preview without annotations
             GeneratePreviewWithoutAnnotations.Run();
+            #endregion
+
+            #region Loading document wuth custom fonts
+            LoadingCustomFonts.Run();
+            #endregion
+
+            #region Put image over another image 
+            PutImageAnnotationOverText.Run();
+            #endregion
+
+            #region Set resolution for document preview
+            SetDocumentPreviewResolution.Run();
             #endregion
 
             #region Load document from local disk

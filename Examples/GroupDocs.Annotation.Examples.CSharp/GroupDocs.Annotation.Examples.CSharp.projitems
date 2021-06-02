@@ -15,6 +15,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\GetAllVersionKeysOnDocument.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\GetDocumentTextContentInformation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\GetListOfAnnotationsUsingVersionKey.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\LoadingCustomFonts.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Loading\LoadingAnnotatedDocumentVersion.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Loading\LoadingDocumentsFromDifferentSources\LoadDocumentFromAmazonS3.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Loading\LoadingDocumentsFromDifferentSources\LoadDocumentFromAzure.cs" />
@@ -23,6 +24,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Loading\LoadingDocumentsFromDifferentSources\LoadDocumentFromStream.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Loading\LoadingDocumentsFromDifferentSources\LoadDocumentFromUrl.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Loading\LoadPasswordProtectedDocuments.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\PutImageAnnotationOverText.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Saving\FilteringAnnotationTypes.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Saving\SavingAsInputFromFilePath.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Saving\SavingAsInputFromFilePathWithOptions.cs" />
@@ -31,6 +33,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Saving\SavingDocumentVersionWithCustomName.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Saving\SavingOnlyPagesWithAnnotations.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\Saving\SavingSpecificPageRange.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AdvancedUsage\SetDocumentPreviewResolution.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddAreaAnnotation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddArrowAnnotation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BasicUsage\AddAnnotationToTheDocument\AddDistanceAnnotation.cs" />
