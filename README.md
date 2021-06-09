@@ -1,10 +1,10 @@
 ![Nuget](https://img.shields.io/nuget/v/groupdocs.annotation) ![Nuget](https://img.shields.io/nuget/dt/groupdocs.annotation) ![GitHub](https://img.shields.io/github/license/groupdocs-annotation/GroupDocs.Annotation-for-.NET)
+
 ## .NET API for Document Annotation
 
 GroupDocs.Annotation for .NET is a lightweight, yet powerful .NET library that seamlessly [integrates document annotation features](https://products.groupdocs.com/annotation/net) into your .NET applications. Apply graphic, text and watermark annotations on Office, OpenOffice, PDF documents as well as images & CAD drawings with simplest object model.
 
 <p align="center">
-
   <a title="Download complete GroupDocs.Annotation for .NET source code" href="https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET/archive/master.zip">
 	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" />
   </a>
@@ -12,9 +12,10 @@ GroupDocs.Annotation for .NET is a lightweight, yet powerful .NET library that s
 
 Directory | Description
 --------- | -----------
+[Demos](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET/tree/master/Demos)  | Contains demo projects that demonstrate product features.
 [Examples](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET/tree/master/Examples)  | Contains the package of all .NET C# examples and sample files that will help you learn how to use product features.
-[Showcases](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET/tree/master/Showcases)  | The open source UI examples have been developed to help the developers in order to give them an idea that how they will integrate the GroupDocs.Viewer for .NET API in the front end applications. 
-[Plugins](https://github.com/groupdocs-Annotation/GroupDocs.Annotation-for-.NET/tree/master/Plugins/)  | Contains the plugins related to GroupDocs.Viewer for Visual Studio.
+[Showcases](https://github.com/groupdocs-annotation/GroupDocs.Annotation-for-.NET/tree/master/Showcases)  | The open source UI examples have been developed to help the developers in order to give them an idea that how they will integrate the GroupDocs.Annotation for .NET API in the front end applications.
+
 
 ## Annotate Documents & Images via .NET Library
 
@@ -49,7 +50,7 @@ Directory | Description
 
 ## Annotation Objects
 
-**Graphic Annotation:** Area, Arrow, Distance, Ellipse, Point, Polyline, Resource Redaction, TextField 
+**Graphic Annotation:** Area, Arrow, Distance, Ellipse, Point, Polyline, Resource Redaction, TextField
 **Text Annotation:** Highlight, Link, Replacement, Strikeout, Reduction, Underline
 **Watermark:** Diagonal, Horizontal
 
